@@ -62,15 +62,12 @@
 				<li>How to measure the translations quality using automatic metric and human rating especially for tabular semi-structured data.
 			</ul>
 		    </p>
-		    <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a><span>&#9672;</span> Poor Table Representation</h2>
+		    <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a><span>&#9672;</span> Table Translation Pipeline</h2>
 		    <h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Challenge</h3>
-		    <p style="text-align: justify;"> The use of a universal template leads to most sentences being ungrammatical or non-sensible. For example,</p> 
-		    <p style="text-align: center"><span>&#10060;</span> The Founded of New York Stock Exchange are May 17, 1792; 226 years ago.</p>
-		    <h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solution: Better Paragraph Representation</h3>
-		    <p style="text-align: justify;"> We form entity specific templates by using value entity types <span style="color: blue">DATE</span> or <span style="color: blue">MONEY</span> or <span style="color: blue">CARDINAL</span> or <span style="color: blue">BOOL</span>. We get, <p>
-		    <p style="text-align: center"><span>&#9989;</span> New York Stock Exchange was founded on May17, 1792; 226 years ago.</p>
-		    <p style="text-align: justify;"> Further, we add category specific information as well. For example, <p>
-		    <p style="text-align: justify;"> New York Stock Exchange is an <b><span style="color: darkgreen">organization</span></b>.</p>
+		    <p style="text-align: justify;"> Translating tabular data is more challenging than normal sentences because translation models are trained to translate proper sentences but our data is in the form of key value pairs which makes it difficult to incorporate context for good quality translation</p> 
+		    <h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solution </h3>
+			<p style="text-align: justify;">We devised a translation pipeline which incorporates context addition thorugh table category and methods for handling named entitities </p> 
+		    <p style="margin-left:10%; margin-right:10%;"><img src="figures/pipeline.png" style="max-width:100%;"></p>
 
 			<h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a><span>&#9672;</span> Missing Lexical Knowledge</h2>
 		    <h3><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Challenge</h3>
